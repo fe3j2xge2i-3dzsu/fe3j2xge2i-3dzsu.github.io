@@ -1,0 +1,29 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+// 自定义表格样式
+table {
+  display: table;
+  word-break: break-word;
+}
+
+// 修改后的选择器，针对特定的表格
+body > main > div > table:nth-of-type(2) {
+  display: table;
+  word-break: break-word;
+}
+
+body > main > div > table:nth-of-type(2) th,
+body > main > div > table:nth-of-type(2) td {
+  padding: 0.5rem 0rem;
+  border: 1px solid #e9ebec;
+}
+
+// 其他表格样式保持不变
+.main-content table th,
+.main-content table td {
+  padding: 0.5rem 0rem;
+  border: 1px solid #e9ebec;
+}
